@@ -1,3 +1,4 @@
+---
 - name: Disable repositories
   action: "{{ _rhsm_repository_task }}"
   args:

@@ -1,15 +1,16 @@
+---
 galaxy_info:
-  author: Sean Myers
-  description: Role to automate subscription-manager usage.
-  company: Red Hat, Inc.
-  license: BSD
+  role_name: rhsm
+  author: Joel Castillo
+  description: Role to setup subscription management on RedHat Enterprise Linux. Forked from [oasis-roles/rhsm](https://github.com/oasis-roles/rhsm)
+  company: "City of New York, Department of Records and Information Services"
+  license: "license (BSD, MIT)"
   min_ansible_version: 2.4
   platforms:
     - name: EL
       versions:
         - 7
-
   galaxy_tags:
-    - oasis
+    - development
 
 dependencies: []

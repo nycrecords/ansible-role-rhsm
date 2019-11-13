@@ -1,5 +1,6 @@
-# role tasks
-- block:
+---
+- name: Include unsubscribe tasks
+  block:
   # Some of the tasks we run are scary-looking, even when skipped, so wrap the
   # various stages up in include_tasks and only show scary things when told to
   - include_tasks: unsubscribe.yml
@@ -7,7 +8,8 @@
   become: true
   become_user: root
 
-- block:
+- name: Include subscribe tasks
+  block:
   - include_tasks: subscribe.yml
     when: rhsm_username != omit or rhsm_activationkey != omit
 
@@ -22,7 +24,8 @@
   # setting the release explodes if the system isn't subscribed,
   # so it should go after the subscribe tasks, and should only
   # run if changes to the release are requested.
-  - include_tasks: release.yml
+  - name: Include release tasks
+    include_tasks: release.yml
     when: rhsm_release or rhsm_release_unset
 
   # decide whether or not to use the vendored rhsm_repository module,
@@ -33,10 +36,12 @@
         {{ ansible_version.full is version_compare('2.5', '>=') |
            ternary('rhsm_repository', '_rhsm_repository') }}
 
-  - include_tasks: repo_only.yml
+  - name: Include only enable specific repos tasks
+    include_tasks: repo_only.yml
     when: "'only' in rhsm_repositories"
 
-  - include_tasks: repo_endisable.yml
+  - name: Include only disable specific repos tasks
+    include_tasks: repo_endisable.yml
     when: "'only' not in rhsm_repositories"
 
   - include_tasks: output.yml

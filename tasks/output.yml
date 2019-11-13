@@ -1,3 +1,4 @@
+---
 - name: Get system subscription status
   command: subscription-manager status
   register: oasis_roles_rhsm_subscription

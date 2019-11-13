@@ -1,3 +1,4 @@
+---
 - name: Register system to RHSM provider
   redhat_subscription:
     state: present

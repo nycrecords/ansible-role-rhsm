@@ -8,3 +8,4 @@ __pycache__/*
 # artifacts generated during testing
 junit.xml
 output.yml
+.envrc

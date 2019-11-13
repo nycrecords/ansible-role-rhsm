@@ -1,3 +1,4 @@
+---
 # TODO These tasks should be considered for addition to the ansible
 #      rhsm_repositories module, which would remove the need to set facts to
 #      ensure idempotence when using the command module.

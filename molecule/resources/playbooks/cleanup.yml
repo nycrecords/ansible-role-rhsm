@@ -1,6 +1,7 @@
+---
 - name: cleanup
   gather_facts: false
-  hosts: rhsm
+  hosts: all
   tasks:
     - name: Check if host to clean up is available
       wait_for_connection:
@@ -12,7 +13,7 @@
 
     - name: Unregister system if available
       include_role:
-        name: rhsm
+        name: ansible-role-rhsm
       vars:
         rhsm_username: "{{ omit }}"
         rhsm_unregister: true

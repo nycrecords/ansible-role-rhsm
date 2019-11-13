@@ -1,3 +1,4 @@
+---
 # default vars for rhsm role
 
 # vars used by this role closely match args that the redhat_subscription and

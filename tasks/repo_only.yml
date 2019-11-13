@@ -1,3 +1,4 @@
+---
 # these tasks are the idempotent equivalent of disabling all repos and then
 # only enabling specific ones, as seen in the rhsm_repository module docs.
 - name: Enable specific repositories
