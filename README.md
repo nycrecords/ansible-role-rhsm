@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/nycrecords/ansible-role-rhsm.svg?branch=master)](https://travis-ci.org/nycrecords/ansible-role-rhsm/)
+[![Build Status](https://travis-ci.com/nycrecords/ansible-role-rhsm.svg?branch=master)](https://travis-ci.com/nycrecords/ansible-role-rhsm/)
 
 RHSM
 =====
