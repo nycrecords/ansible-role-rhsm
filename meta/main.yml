@@ -2,7 +2,7 @@
 galaxy_info:
   role_name: rhsm
   author: Joel Castillo
-  description: Role to setup subscription management on RedHat Enterprise Linux. Forked from [oasis-roles/rhsm](https://github.com/oasis-roles/rhsm)
+  description: Role to setup subscription management on RedHat Enterprise Linux. Forked from https://github.com/oasis-roles/rhsm
   company: "City of New York, Department of Records and Information Services"
   license: "license (BSD, MIT)"
   min_ansible_version: 2.4
@@ -12,5 +12,6 @@ galaxy_info:
         - 7
   galaxy_tags:
     - development
+    - rhsm
 
 dependencies: []
