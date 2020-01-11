@@ -1,7 +1,11 @@
-[![Build Status](https://travis-ci.com/nycrecords/ansible-role-rhsm.svg?branch=master)](https://travis-ci.com/nycrecords/ansible-role-rhsm/)
+Ansible Role: RHSM
+==================
 
-RHSM
-=====
+![GitHub](https://img.shields.io/github/license/nycrecords/ansible-role-rhsm)
+[![Build Status](https://travis-ci.com/nycrecords/ansible-role-rhsm.svg?branch=master)](https://travis-ci.org/nycrecords/ansible-role-rhsm)
+[![Galaxy](https://img.shields.io/badge/galaxy-nycrecords.rhsm-blue.svg)](https://galaxy.ansible.com/nycrecords/rhsm)
+![Ansible](https://img.shields.io/ansible/role/d/44610)
+![Ansible](https://img.shields.io/ansible/quality/44610)
 
 This role will register or unregister a system using `subscription-manager`, and can also enable or disable
 repositories available via subscription.

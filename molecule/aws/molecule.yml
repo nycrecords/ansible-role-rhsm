@@ -17,8 +17,8 @@ provisioner:
   connection_options:
     ansible_user: ec2-user
   playbooks:
-    converge: ../resources/playbooks/converge.yml
-    cleanup: ../resources/playbooks/cleanup.yml
+    converge: converge.yml
+    cleanup: cleanup.yml
   inventory:
     host_vars:
       instance:

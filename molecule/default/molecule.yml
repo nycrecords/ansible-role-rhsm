@@ -15,8 +15,8 @@ provisioner:
   lint:
     name: ansible-lint
   playbooks:
-    converge: ../resources/playbooks/converge.yml
-    cleanup: ../resources/playbooks/cleanup.yml
+    converge: converge.yml
+    cleanup: cleanup.yml
   inventory:
     host_vars:
       instance:
